@@ -20,7 +20,8 @@ I graduated from the TripleTen Data Science Bootcamp in 2024, where I completed 
 - Full Stack Development (Learning): JavaScript, HTML, CSS, Git
 
 # Education
-**FullStack Development** | SavvyCoders | 2025-2025 Current
-**Data Science Bootcamp** | TripleTen | 2023 - 2024  
+**FullStack Development** | SavvyCoders | 2025-2025 Current <br>
+**Data Science Bootcamp** | TripleTen | 2023 - 2024 <br>
 **BA in Accounting** | Belmont Abbey College | 2010 - 2012
+
 
