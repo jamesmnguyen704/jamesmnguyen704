@@ -26,19 +26,52 @@
 
 ---
 
-## About Me
+<p align="center">
+  <b>Accounting professional, 10+ years, now building the systems that replace the manual work.</b><br>
+  At Day &amp; Night Solar I run a local-first data platform: one warehouse as the source of truth, bank-to-books reconciliation, and role-scoped AI assistants that stage every import, email and publish for a person to approve.
+</p>
 
-> I'm an **accounting professional with 10+ years of experience** in financial analysis, reconciliations, and process improvement across **technology, manufacturing, and professional services**. Known for strong data integrity, clean reporting, and building repeatable workflows that improve accuracy and efficiency.
+<h3 align="center">The System, End to End</h3>
 
-In my current role at **Day & Night Solar**, I support accounting operations in QuickBooks Desktop Enterprise — bank reconciliation, AP/AR reporting, process standardization, and period-end readiness — while building the internal tooling that makes day-to-day accounting consistent for the team.
+<p align="center"><img src="assets/system-flow.svg" alt="From messy exports to numbers you can trace" width="100%"/></p>
 
-Alongside the accounting work, I recently graduated from the **SavvyCoders Full Stack Web Development Bootcamp**, built and deployed a full-stack capstone (**Cinemetrics**), and hold a **Data Science Certification (TripleTen, 2024)**. I apply Python, SQL, and JavaScript to automate reporting, validate data, and streamline workflows.
+<table align="center">
+<tr>
+<td align="center"><b>1,300+</b><br>automated tests</td>
+<td align="center"><b>150+</b><br>scheduled pipeline steps</td>
+<td align="center"><b>100+</b><br>warehouse tables</td>
+<td align="center"><b>0</b><br>unapproved imports or sends</td>
+</tr>
+</table>
 
-- **10+ years** in finance · **170+ projects managed** · **15 U.S. states**
-- Background: **Accounting → Data Science → Full-Stack Dev**
-- Open to collaboration on finance automation, data migration, and AI-integrated back-office tooling
+<h3 align="center">How I Build With AI Agents</h3>
+
+<table align="center">
+<tr>
+<td width="25%" valign="top" align="center"><b>Unknown is a state</b><br>Unmatched, stale or missing data stays visible instead of turning into a convenient guess.</td>
+<td width="25%" valign="top" align="center"><b>Humans approve</b><br>Accounting imports, email, tax filings and publishing are staged and handed to a person.</td>
+<td width="25%" valign="top" align="center"><b>Every number has a source</b><br>Answers name the table or file they came from and how old it is.</td>
+<td width="25%" valign="top" align="center"><b>Measure the automation</b><br>Checks read the real output, not the intent. A green run is where the question starts.</td>
+</tr>
+</table>
+
+<h2 align="center">Core Stack</h2>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
+</p>
 
 ---
+
+<details>
+<summary><b>More: current work, the system in detail, what running it taught me</b></summary>
 
 <h2 align="center">What I'm Currently Doing</h2>
 
@@ -65,14 +98,6 @@ Multi-agent orchestration · local LLMs (Ollama) · document forensics · Postgr
 </tr>
 </table>
 
----
-
-<h2 align="center">Current Work — Day & Night Solar</h2>
-
-<p align="center"><i>Rebuilding internal operations from the ground up across a commercial solar portfolio — 170+ projects, 15 states. Everything I ship replaces a spreadsheet, a folder full of PDFs, or a manual QuickBooks workflow.</i></p>
-
-<br>
-
 <details>
 <summary><b>More of what I have built</b></summary>
 
@@ -87,7 +112,7 @@ Python/FastAPI + SQLAlchemy service layer designed for Postgres migration. Repla
 <td width="50%" valign="top">
 
 ### QuickBooks Automation
-Programmatic IIF generation for customers, POs, invoices, and deposits with anti-duplicate safety checks against tens of thousands of historical transactions. **Eliminated 90%+ of manual QB entry.**
+Programmatic IIF generation for customers, POs, invoices, and deposits with anti-duplicate safety checks against tens of thousands of historical transactions.
 
 </td>
 </tr>
@@ -122,30 +147,6 @@ OCR + classification + auto-routing for hundreds of incoming vendor docs, bank s
 </table>
 
 </details>
-
-<h3 align="center">How I Build With AI Agents</h3>
-
-<table align="center">
-<tr>
-<td width="25%" valign="top" align="center"><b>Unknown is a state</b><br>Unmatched, stale or missing data stays visible instead of turning into a convenient guess.</td>
-<td width="25%" valign="top" align="center"><b>Humans approve</b><br>Accounting imports, email, tax filings and publishing are staged and handed to a person.</td>
-<td width="25%" valign="top" align="center"><b>Every number has a source</b><br>Answers name the table or file they came from and how old it is.</td>
-<td width="25%" valign="top" align="center"><b>Measure the automation</b><br>Checks read the real output, not the intent. A green run is where the question starts.</td>
-</tr>
-</table>
-
-<h3 align="center">The System, End to End</h3>
-
-<p align="center"><img src="assets/system-flow.svg" alt="From messy exports to numbers you can trace" width="100%"/></p>
-
-<table align="center">
-<tr>
-<td align="center"><b>1,300+</b><br>automated tests</td>
-<td align="center"><b>150+</b><br>scheduled pipeline steps</td>
-<td align="center"><b>100+</b><br>warehouse tables</td>
-<td align="center"><b>0</b><br>unapproved imports or sends</td>
-</tr>
-</table>
 
 <table>
 <tr>
@@ -195,20 +196,7 @@ CI, pre-commit checks, a release gate before every push, and tests for the failu
 
 <p align="center"><b>Operational scope:</b> Payroll · multi-state sales tax compliance · period close · vendor/customer master data · AR/AP · audit response</p>
 
----
-
-<h2 align="center">Core Stack</h2>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
-</p>
+</details>
 
 <details>
 <summary><b>Career, full stack and education</b></summary>
@@ -403,8 +391,6 @@ Every role has been about reconciling high-volume financial data across messy so
 
 </details>
 
----
-
 <h2 align="center">Featured System — Project Waffles</h2>
 
 <p align="center"><i>Private, operator-built, in daily use. The architecture is shown above; the code is not public.</i></p>
@@ -430,11 +416,6 @@ Every role has been about reconciling high-volume financial data across messy so
 ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=flat-square&logo=mongoose&logoColor=white)
 
 </p>
-
-<details>
-<summary><b>View data science portfolio (TripleTen — 16 projects)</b></summary>
-
-<br>
 
 <details>
 <summary><b>TripleTen data science portfolio (16 projects)</b></summary>
@@ -472,21 +453,6 @@ Every role has been about reconciling high-volume financial data across messy so
 | 16 | Customer retention prediction (AUC-ROC ≥ 0.75) | TensorFlow · CNN · sklearn ensemble |
 
 </details>
-
-</details>
-
----
-
-<h2 align="center">GitHub Stats</h2>
-
-<p align="center">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=jamesmnguyen704&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jamesmnguyen704&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=jamesmnguyen704&theme=tokyonight&hide_border=true" />
-</p>
 
 ---
 
