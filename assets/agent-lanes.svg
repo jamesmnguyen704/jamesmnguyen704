@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Role-scoped AI assistants around a human approval gate">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#3b0764"/></linearGradient>
+    <style>.t{font:600 14px 'Segoe UI',Arial,sans-serif;fill:#e2e8f0}.s{font:12px 'Segoe UI',Arial,sans-serif;fill:#a5b4fc}.l{fill:#1e293b;stroke:#6366f1;stroke-width:1.5}</style>
+  </defs>
+  <rect width="900" height="300" rx="18" fill="url(#bg2)"/>
+  <text x="450" y="34" text-anchor="middle" class="t" style="font-size:16px">A team of role-scoped AI assistants, one human gate</text>
+  <g stroke="#6366f1" stroke-width="1.5" opacity="0.7">
+    <path d="M450,150 L150,90"/><path d="M450,150 L300,90"/><path d="M450,150 L450,90"/><path d="M450,150 L600,90"/><path d="M450,150 L750,90"/>
+    <path d="M450,150 L150,230"/><path d="M450,150 L300,230"/><path d="M450,150 L450,230"/><path d="M450,150 L600,230"/><path d="M450,150 L750,230"/>
+  </g>
+  <circle cx="450" cy="150" r="46" fill="#14532d" stroke="#4ade80" stroke-width="3"/>
+  <text x="450" y="146" text-anchor="middle" class="t">Human</text><text x="450" y="164" text-anchor="middle" class="t">gate</text>
+  <g>
+    <rect class="l" x="95"  y="68" width="110" height="44" rx="10"/><text x="150" y="96" text-anchor="middle" class="t">Bank</text>
+    <rect class="l" x="245" y="68" width="110" height="44" rx="10"/><text x="300" y="96" text-anchor="middle" class="t">Books</text>
+    <rect class="l" x="395" y="68" width="110" height="44" rx="10"/><text x="450" y="96" text-anchor="middle" class="t">Projects</text>
+    <rect class="l" x="545" y="68" width="110" height="44" rx="10"/><text x="600" y="96" text-anchor="middle" class="t">Tax</text>
+    <rect class="l" x="695" y="68" width="110" height="44" rx="10"/><text x="750" y="96" text-anchor="middle" class="t">Documents</text>
+    <rect class="l" x="95"  y="208" width="110" height="44" rx="10"/><text x="150" y="236" text-anchor="middle" class="t">Warehouse</text>
+    <rect class="l" x="245" y="208" width="110" height="44" rx="10"/><text x="300" y="236" text-anchor="middle" class="t">Pipeline</text>
+    <rect class="l" x="395" y="208" width="110" height="44" rx="10"/><text x="450" y="236" text-anchor="middle" class="t">Hub</text>
+    <rect class="l" x="545" y="208" width="110" height="44" rx="10"/><text x="600" y="236" text-anchor="middle" class="t">Email drafts</text>
+    <rect class="l" x="695" y="208" width="110" height="44" rx="10"/><text x="750" y="236" text-anchor="middle" class="t">Audit</text>
+  </g>
+  <text x="450" y="284" text-anchor="middle" class="s">Each lane has a written role, an owner for every output, and no power to import, send or publish alone.</text>
+</svg>

@@ -13,7 +13,7 @@
 <!-- Animated Typing Tagline -->
 <p align="center">
   <a href="https://github.com/jamesmnguyen704">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=1F497D&center=true&vCenter=true&width=760&lines=Finance+%26+Operations+Analyst+%C2%B7+Data+Scientist+%C2%B7+Full-Stack+Dev;10%2B+years+bridging+accounting+and+technology;Python+%C2%B7+SQL+%C2%B7+FastAPI+%C2%B7+JavaScript+%C2%B7+Claude+Code;Document+intelligence+%2B+finance+automation" alt="typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=1F497D&center=true&vCenter=true&width=760&lines=Finance+%26+Operations+Analyst+%C2%B7+Data+Scientist+%C2%B7+Full-Stack+Dev;10%2B+years+bridging+accounting+and+technology;Python+%C2%B7+SQL+%C2%B7+FastAPI+%C2%B7+JavaScript+%C2%B7+Claude+Code;Multi-agent+finance+automation+with+human+approval+gates" alt="typing SVG" />
   </a>
 </p>
 
@@ -47,7 +47,7 @@ Alongside the accounting work, I recently graduated from the **SavvyCoders Full 
 <td width="33%" valign="top" align="center">
 
 ### Building
-Internal operations platform at Day & Night Solar — finance system, QuickBooks automation, reconciliation engine, document intelligence, AI-integrated workflows.
+Internal operations platform at Day & Night Solar — a local-first data platform: one warehouse as the source of truth, reconciliation, document intelligence, and a team of role-scoped AI assistants working under human approval.
 
 </td>
 <td width="33%" valign="top" align="center">
@@ -72,6 +72,9 @@ Multi-agent orchestration · local LLMs (Ollama) · document forensics · Postgr
 <p align="center"><i>Rebuilding internal operations from the ground up across a commercial solar portfolio — 170+ projects, 15 states. Everything I ship replaces a spreadsheet, a folder full of PDFs, or a manual QuickBooks workflow.</i></p>
 
 <br>
+
+<details>
+<summary><b>More of what I have built</b></summary>
 
 <table>
 <tr>
@@ -106,7 +109,7 @@ pandas + openpyxl pipeline covering P&L, cash flow, billing, margin, and schedul
 <td width="50%" valign="top">
 
 ### AI Orchestration Layer
-Multi-agent framework on Claude Code — reusable skill definitions, three-stage code-quality pipeline (implement → review → resolve), tiered model routing across cloud + local LLMs.
+Multi-agent framework on Claude Code — each assistant has a written role, a named owner for every output, and a recorded limit on what it may change. Decisions are logged once and never asked twice; nothing imports, sends, or publishes without a person approving it.
 
 </td>
 <td width="50%" valign="top">
@@ -118,9 +121,97 @@ OCR + classification + auto-routing for hundreds of incoming vendor docs, bank s
 </tr>
 </table>
 
+</details>
+
+<h3 align="center">How I Build With AI Agents</h3>
+
+<table align="center">
+<tr>
+<td width="25%" valign="top" align="center"><b>Unknown is a state</b><br>Unmatched, stale or missing data stays visible instead of turning into a convenient guess.</td>
+<td width="25%" valign="top" align="center"><b>Humans approve</b><br>Accounting imports, email, tax filings and publishing are staged and handed to a person.</td>
+<td width="25%" valign="top" align="center"><b>Every number has a source</b><br>Answers name the table or file they came from and how old it is.</td>
+<td width="25%" valign="top" align="center"><b>Measure the automation</b><br>Checks read the real output, not the intent. A green run is where the question starts.</td>
+</tr>
+</table>
+
+<h3 align="center">The System, End to End</h3>
+
+<p align="center"><img src="assets/system-flow.svg" alt="From messy exports to numbers you can trace" width="100%"/></p>
+
+<table align="center">
+<tr>
+<td align="center"><b>1,300+</b><br>automated tests</td>
+<td align="center"><b>150+</b><br>scheduled pipeline steps</td>
+<td align="center"><b>100+</b><br>warehouse tables</td>
+<td align="center"><b>0</b><br>unapproved imports or sends</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Multi-Agent Control Plane
+Role-scoped Claude Code assistants with written authority limits, a shared decision record, and lane-to-lane messaging. One owner per output.
+
+</td>
+<td width="50%" valign="top">
+
+### Data Contracts
+Every table has a declared writer, a freshness rule by real record date, and row-count checks that report a shrink instead of hiding it.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Reconciliation Engine
+Bank-to-books matching with explicit states (confirmed, proposed, no match, excluded) and human decisions that survive a reload.
+
+</td>
+<td width="50%" valign="top">
+
+### Quality Gates
+CI, pre-commit checks, a release gate before every push, and tests for the failure paths, not only the happy one.
+
+</td>
+</tr>
+</table>
+
+<p align="center"><img src="assets/agent-lanes.svg" alt="Role-scoped AI assistants around a human approval gate" width="100%"/></p>
+
+<details>
+<summary><b>What running it daily has taught me</b></summary>
+
+- **A committed fix is not a fix that ran.** Check the real log, not the commit.
+- **"The pipeline succeeded" can hide failures.** Distinguish skipped, failed and findings.
+- **A startup message can silently exceed its cap.** Measure the real output on every start path.
+- **A fresh stamp can hide stale content.** Judge freshness by the newest real record.
+- **Recording a decision must be cheaper than skipping it.** Answers get asked twice otherwise.
+- **Coordination can outgrow the work.** Measure how much of the activity maintains the machinery.
+- **Green locally is not green in CI.** Look at the remote run after every push.
+
+</details>
+
 <p align="center"><b>Operational scope:</b> Payroll · multi-state sales tax compliance · period close · vendor/customer master data · AR/AP · audit response</p>
 
 ---
+
+<h2 align="center">Core Stack</h2>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
+  <img src="https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" />
+</p>
+
+<details>
+<summary><b>Career, full stack and education</b></summary>
 
 <h2 align="center">Career Journey</h2>
 
@@ -136,7 +227,7 @@ OCR + classification + auto-routing for hundreds of incoming vendor docs, bank s
 **Finance & Operations Analyst** <br>
 *Oct 2025 – Present · Collinsville, IL*
 
-Building the internal operations platform end-to-end — Python/FastAPI, QuickBooks automation, bank reconciliation engine, executive dashboards, AI orchestration, document intelligence.
+Building the internal operations platform end-to-end — a local-first data platform with one warehouse as the source of truth, QuickBooks automation, a bank reconciliation engine, executive dashboards, document intelligence, and a team of role-scoped AI assistants behind human-approval gates, CI, and release checks.
 
 </td>
 <td width="33%" valign="top">
@@ -289,6 +380,8 @@ Every role has been about reconciling high-volume financial data across messy so
 | **AI / ML** | Claude Code · Anthropic API · Ollama (llama3.1) · PyTorch · TensorFlow · XGBoost · LightGBM · scikit-learn |
 | **Enterprise (prior roles)** | SAP ERP · Oracle · Sage FAS · Medius · Readsoft · CMiC · SAGE CRE 300 |
 | **Dev Tooling** | Git · VS Code · pytest · black · flake8 · mypy · pre-commit · uv · Node.js |
+| **Automation & Quality** | GitHub Actions CI · pre-commit gates · pytest with failure-path tests · Windows Task Scheduler · release gate before every push |
+| **Agentic Engineering** | Claude Code hooks, skills, subagents and MCP · role-scoped agent lanes · recorded decisions · human-approved imports, email and publishing |
 
 </details>
 
@@ -308,6 +401,22 @@ Every role has been about reconciling high-volume financial data across messy so
 
 ---
 
+</details>
+
+---
+
+<h2 align="center">Featured System — Project Waffles</h2>
+
+<p align="center"><i>Private, operator-built, in daily use. The architecture is shown above; the code is not public.</i></p>
+
+<table align="center">
+<tr>
+<td width="33%" valign="top"><b>Problem</b><br>Hundreds of exports, statements and documents, several accounting and banking systems, and numbers nobody could trace.</td>
+<td width="33%" valign="top"><b>Approach</b><br>A local warehouse as the single source of truth, parsers that check their sources, reconciliation with explicit match states, and human-approved imports.</td>
+<td width="33%" valign="top"><b>What makes it different</b><br>Role-scoped AI assistants, recorded decisions, row-count and freshness checks, and CI plus a release gate on every push.</td>
+</tr>
+</table>
+
 <h2 align="center">Featured Project — Cinemetrics</h2>
 
 <p align="center"><i>Full-stack capstone built and deployed end-to-end as my SavvyCoders graduation project.</i></p>
@@ -326,6 +435,9 @@ Every role has been about reconciling high-volume financial data across messy so
 <summary><b>View data science portfolio (TripleTen — 16 projects)</b></summary>
 
 <br>
+
+<details>
+<summary><b>TripleTen data science portfolio (16 projects)</b></summary>
 
 ### EDA & Statistical Analysis
 | # | Project | Tech |
@@ -361,6 +473,8 @@ Every role has been about reconciling high-volume financial data across messy so
 
 </details>
 
+</details>
+
 ---
 
 <h2 align="center">GitHub Stats</h2>
@@ -372,16 +486,6 @@ Every role has been about reconciling high-volume financial data across messy so
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=jamesmnguyen704&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=jamesmnguyen704&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" />
-</p>
-
-<h3 align="center">Trophies</h3>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=jamesmnguyen704&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&column=7" alt="trophies" />
 </p>
 
 ---
