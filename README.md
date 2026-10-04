@@ -1,66 +1,54 @@
 # James Nguyen
 
-Finance and operations analyst in St. Louis. I spent ten years reconciling numbers by hand in SAP, Oracle and QuickBooks. Now I write the Python that does it.
+**I build the systems finance and operations run on.**
 
-At Day & Night Solar, a commercial solar installer with 170+ projects in 15 states, I run the accounting side (AP/AR, bank recs, payroll, multi-state sales tax, period close) and build the internal tools the team works from.
+I'm a finance and operations analyst and the in-house developer at Day & Night Solar, a commercial solar and energy storage contractor in the St. Louis area. I spent 10+ years in accounting and reconciliation, and ran my own small business for 13 years before that. These days I write the Python, SQL and agent workflows that replace work I used to do by hand.
 
-## What I've built at Day & Night
+## What I build
 
-It's one private system, so the code isn't public. This is how it fits together:
+- **Data pipelines.** Messy exports from banks, accounting software and documents go into one local warehouse, and the reports rebuild from there. Every number can be traced back to its source.
+- **Finance automation.** QuickBooks imports that fail closed: if a file doesn't pass validation, nothing gets imported. Bank reconciliation that scores each match by confidence and sends unclear ones to a review queue.
+- **AI workflows.** Claude Code agents and MCP tools, each scoped to one job, that can draft and check work but can't import, send or publish anything without my approval. I also run models locally (llama.cpp, Ollama, ComfyUI/SDXL LoRA training).
 
-<p align="center"><img src="assets/system-flow.svg" alt="Exports flow through parsers into a warehouse, then matching, staged imports and human approval" width="820"></p>
+My work systems are private, so this page covers how they work and leaves out the details. The projects below are personal and public.
 
-- **Bank reconciliation.** Fuzzy matching across five bank accounts with confidence tiers. Anything ambiguous goes to a review queue instead of being auto-matched, and my decisions carry over between runs.
-- **QuickBooks imports.** Generates IIF files for customers, POs, invoices and deposits, checked against the full transaction history so nothing posts twice. I import them; the tool never does.
-- **Reporting.** P&L, cash flow, billing and margin workbooks rebuild themselves from a local warehouse: 100+ tables, 150+ scheduled steps, 1,300+ tests.
-- **Document intake.** OCR and classification for vendor documents and bank statements.
-- **AI assistants.** A handful of Claude Code agents, each limited to one area (bank, books, tax, documents). None of them can import, send or publish anything until I approve it.
+## Featured projects
 
-The rules the assistants work under:
-
-- **Unknown is a state.** Unmatched, stale or missing data stays visible instead of turning into a convenient guess.
-- **Humans approve.** Accounting imports, email, tax filings and publishing are staged and handed to a person.
-- **Every number has a source.** Answers name the table or file they came from and how old it is.
-- **Measure the automation.** Checks read the real output, not the intent. A green run is where the question starts.
+| Project | What it is | Stack | Links |
+|---|---|---|---|
+| **Cinemetrics** | App for finding movies, TV and games: what's trending, what's on each streaming service, what's playing near a ZIP code, and entertainment news. Built without a framework. Started as my SavvyCoders capstone and I still maintain it (100+ commits). | Vanilla JS SPA, Express, MongoDB, TMDB | [Live](https://capstonesavvycoders.netlify.app/) · [Code](https://github.com/jamesmnguyen704/CapstoneSavvyCoders) |
+| **No-Whey** | Checks ingredient lists for dairy. Returns **SAFE**, **UNSAFE** or **REVIEW REQUIRED** and says why. The rules live in YAML, so they can be read and reviewed. | FastAPI, vanilla JS PWA | [Live](https://no-whey.onrender.com) |
+| **Bait & Switch** | Fishing map for the Midwest: 200+ curated waters, a live Illinois DNR depth overlay and OpenStreetMap boat ramps. | React, Vite, Leaflet | [Live](https://bait-and-switch-ruddy.vercel.app) |
+| **TripleTen Data Science** | 16 projects covering EDA, hypothesis testing and ML. Includes churn prediction with CatBoost (AUC-ROC 0.844) and a CNN that estimates age from photos (~7-year MAE). | Python, pandas, scikit-learn, CatBoost, Keras | [Code](https://github.com/jamesmnguyen704/TripleTenProgram) |
 
 <details>
-<summary>How the assistants are split up</summary>
-<br>
-<p align="center"><img src="assets/agent-lanes.svg" alt="Separate assistant lanes for bank, books, projects, tax and documents, all passing through one human approval gate" width="820"></p>
-</details>
-
-## Before this
-
-I ran my own service business for 13 years, books and payroll included, then moved into corporate accounting: AP at Walmart eCommerce, reconciliations at NTT and Robert Half, staff accountant at Curtiss-Wright, and an ERP migration (Sage CRE 300 to CMiC) at Keeley Companies.
-
-<details>
-<summary>Full work history</summary>
+<summary><b>Private projects (explained without the code)</b></summary>
 <br>
 
-| Years | Company | Role |
-|---|---|---|
-| 2025 to now | Day & Night Solar | Finance & Operations Analyst |
-| 2025 | Keeley Companies | Data Analyst (contract), ERP migration |
-| 2022 to 2023 | Curtiss-Wright | Staff Accountant, SAP and Oracle |
-| 2021 to 2022 | Robert Half | Consultant, reconciliation for Elgi, Essity, Mood Media |
-| 2019 to 2021 | NTT | Reconciliation Analyst, Cisco and Dell accounts |
-| 2019 | Wells Fargo | Trading Service Rep (SIE, Series 7/63 program) |
-| 2018 to 2019 | Walmart eCommerce | Accounts Payable, 800+ vendors |
-| 2005 to 2018 | Top Nails Tech | Owner, team of six |
+- **Atlas:** a personal data lakehouse that runs locally. Raw exports move through staging into canonical tables, and the views get generated from those. Search runs on SQLite FTS5, and local LLMs answer questions against it. Nothing leaves the machine.
+- **Garden OS:** structured garden records. CSV files are the source of truth, Python scripts work on them, and a static HTML hub plus a local web form handle input.
 
 </details>
 
-## Other projects
+## How I work
 
-- **Cinemetrics:** movie data app on Node, Express and MongoDB. My SavvyCoders capstone. [Live site](https://capstonesavvycoders.netlify.app/) · [Code](https://github.com/jamesmnguyen704/CapstoneSavvyCoders)
-- **[TripleTen data science](https://github.com/jamesmnguyen704/TripleTenProgram):** 16 projects, from EDA and hypothesis testing to machine learning.
+- **Unknown is a valid answer.** If data is unmatched, stale or missing, it gets shown as that. It doesn't get filled in with a convenient guess.
+- **A person approves.** Imports, emails and anything else that leaves the system gets staged for a human to sign off.
+- **Check the output.** A passing run doesn't prove much. Check what the run actually produced.
 
-## Tools
+## Writing
 
-Python, SQL, SQLite, FastAPI, pandas, pytest, GitHub Actions, Claude Code, JavaScript and Node. On the accounting side: QuickBooks Enterprise, SAP, Oracle, Sage, Excel.
+I write short lessons on finance automation, data work and building with AI agents: **[jamesnguyen.netlify.app/blog](https://jamesnguyen.netlify.app/blog)**
 
-BA in Accounting, Belmont Abbey College (2012). Data Science, TripleTen (2024). Full Stack Web Development, SavvyCoders (2025).
+## Toolbox
+
+- **Data:** Python · SQL · SQLite · pandas · scikit-learn · pytest · Jupyter
+- **Web:** FastAPI · JavaScript · Node/Express · MongoDB · React · Astro
+- **AI:** Claude Code · MCP · llama.cpp · Ollama · ComfyUI
+- **Finance:** QuickBooks Enterprise · SAP · Oracle · Sage · Excel
+
+BA in Accounting · Data Science, TripleTen (2024) · Full Stack Web Development, SavvyCoders (2025)
 
 ## Contact
 
-[LinkedIn](https://linkedin.com/in/jamesmnguyen704) · [Portfolio](https://jamesnguyen.netlify.app/) · [Email](mailto:jamesmnguyen704@outlook.com)
+[Portfolio](https://jamesnguyen.netlify.app) · [LinkedIn](https://www.linkedin.com/in/jamesmnguyen704/) · [GitLab](https://gitlab.com/jamesmnguyen704) · [Facebook](https://www.facebook.com/jamesmnguyen704/) · [Email](mailto:jamesmnguyen704@outlook.com)
