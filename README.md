@@ -40,9 +40,13 @@ My work systems are private, so this page covers how they work and leaves out th
 
 I write short lessons on finance automation, data work and building with AI agents: **[jamesnguyen.netlify.app/blog](https://jamesnguyen.netlify.app/blog)**
 
+### Featured: finance operations platform (private, case study)
+
+An AI-assisted finance and operations platform for a commercial solar contractor, designed and directed by me: a 170+ table analytics warehouse, about 50 loaders, a daily pipeline of about 150 steps, company and per-project dashboards, and about 20 chartered AI agents, with a person approving every posting. The system and its data are private.
+
 ## Toolbox
 
-- **Data:** Python · SQL · SQLite · pandas · scikit-learn · pytest · Jupyter · data architecture · data modeling · ELT · data quality
+- **Data:** Python · SQL · SQLite · pandas · scikit-learn · pytest · Jupyter · data architecture · data modeling · ELT · data quality · statistics · machine learning · time series
 - **Web:** FastAPI · JavaScript · Node/Express · MongoDB · React · Astro
 - **AI:** Claude Code · MCP · llama.cpp · Ollama · ComfyUI
 - **Finance:** QuickBooks Enterprise · SAP · Oracle · Sage · Excel
