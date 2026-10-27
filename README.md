@@ -112,8 +112,8 @@ A Midwest fishing map: 200+ curated waters, a live Illinois DNR depth overlay an
 **Credentials:** BA Accounting · Data Science, TripleTen (2024) · Full Stack Web Dev, SavvyCoders (2025) · Anthropic Academy: Claude Code, MCP, AI Fluency, Cowork
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jamesmnguyen704&show_icons=true&hide_border=true" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jamesmnguyen704&layout=compact&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=jamesmnguyen704&hide_rank=true&show_icons=true&hide_border=true" height="150"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jamesmnguyen704&hide=jupyter%20notebook,html,css&layout=compact&hide_border=true" height="150"/>
 </p>
 
 <!--
