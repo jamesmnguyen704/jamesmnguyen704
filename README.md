@@ -6,8 +6,8 @@ I'm a finance and operations analyst and the in-house developer at Day & Night S
 
 ## What I build
 
-- **Data pipelines.** Messy exports from banks, accounting software and documents go into one local warehouse, and the reports rebuild from there. Every number can be traced back to its source.
-- **Finance automation.** QuickBooks imports that fail closed: if a file doesn't pass validation, nothing gets imported. Bank reconciliation that scores each match by confidence and sends unclear ones to a review queue.
+- **Data pipelines.** Messy exports from banks, accounting software and documents go into one local warehouse, and the reports rebuild from there. I design the data architecture: one governed analytics database, canonical views for reporting, append-only audit tables, and load stamps, so every number can be traced back to where it loaded from.
+- **Finance automation.** QuickBooks imports that fail closed: if a file doesn't pass validation, nothing gets imported. Bank reconciliation that scores each match by confidence and sends unclear ones to a review queue. Every reconciliation verdict is written to an append-only audit table, so a decision can always be traced and nothing is overwritten.
 - **AI workflows.** Claude Code agents and MCP tools, each scoped to one job, that can draft and check work but can't import, send or publish anything without my approval. I also run models locally (llama.cpp, Ollama, ComfyUI/SDXL LoRA training).
 
 My work systems are private, so this page covers how they work and leaves out the details. The projects below are personal and public.
@@ -42,13 +42,15 @@ I write short lessons on finance automation, data work and building with AI agen
 
 ## Toolbox
 
-- **Data:** Python · SQL · SQLite · pandas · scikit-learn · pytest · Jupyter
+- **Data:** Python · SQL · SQLite · pandas · scikit-learn · pytest · Jupyter · data architecture · data modeling · ELT · data quality
 - **Web:** FastAPI · JavaScript · Node/Express · MongoDB · React · Astro
 - **AI:** Claude Code · MCP · llama.cpp · Ollama · ComfyUI
 - **Finance:** QuickBooks Enterprise · SAP · Oracle · Sage · Excel
 
 BA in Accounting · Data Science, TripleTen (2024) · Full Stack Web Development, SavvyCoders (2025)
 
+Credentials: Data Science certificate, TripleTen (June 2024) · Anthropic Academy, six badges (Claude Code, MCP, AI Fluency, Cowork)
+
 ## Contact
 
-[Portfolio](https://jamesnguyen.netlify.app) · [LinkedIn](https://www.linkedin.com/in/jamesmnguyen704/) · [GitLab](https://gitlab.com/jamesmnguyen704) · [Facebook](https://www.facebook.com/jamesmnguyen704/) · [Email](mailto:jamesmnguyen704@outlook.com)
+[Portfolio](https://jamesnguyen.netlify.app) · [LinkedIn](https://www.linkedin.com/in/jamesmnguyen704/) · [GitLab](https://gitlab.com/jamesmnguyen704) · [Email](mailto:jamesmnguyen704@outlook.com)
