@@ -57,7 +57,7 @@ flowchart LR
 | 🧾 **Ledger automation** | Purchase orders, bills, invoices and payments generated as import files behind a fail-closed validation gate. A person approves every posting. |
 | 📊 **Dashboards** | A company operations hub, a page for each active project (budget → POs → spend → milestones), and system-health boards, all rebuilt from the warehouse every day. |
 | ⚙️ **Pipeline** | A scheduled daily run of ~150 steps that records every step's status, so a partial run never passes for a complete one. |
-| 🤖 **AI operations** | ~20 Claude Code agents, each scoped to one job (books, bank, projects, tax, data quality, dashboards). Ownership registry, issue register and a decision log of 240+ rulings. Agents propose; a human approves money, tax and anything external. |
+| 🤖 **AI operations** | ~20 Claude Code agents, each scoped to one job (books, bank, projects, tax, data quality, dashboards). Ownership registry, issue register and a decision log with hundreds of entries. Agents propose; a human approves money, tax and anything external. |
 | 🛡️ **Controls** | Pre-commit gates for secrets and unsafe changes, rolled out report-only first, then enforced. |
 
 **Principles:** Unknown is a valid answer · The bank is the source of truth · A person approves · Check the output, not the exit code
@@ -109,7 +109,11 @@ A Midwest fishing map: 200+ curated waters, a live Illinois DNR depth overlay an
 
 **Finance** <img src="https://img.shields.io/badge/-QuickBooks_Enterprise-2CA01C?logo=intuit&logoColor=white" /> <img src="https://img.shields.io/badge/-SAP-0FAAFF?logo=sap&logoColor=white" /> <img src="https://img.shields.io/badge/-Oracle-F80000?logo=oracle&logoColor=white" /> <img src="https://img.shields.io/badge/-Sage-00D639" /> <img src="https://img.shields.io/badge/-Excel-217346?logo=microsoftexcel&logoColor=white" />
 
-**Credentials:** BA Accounting · Data Science, TripleTen (2024) · Full Stack Web Dev, SavvyCoders (2025) · Anthropic Academy: Claude Code, MCP, AI Fluency, Cowork
+### Training
+- **Full Stack Web Development, SavvyCoders (2025):** 12-week immersive bootcamp run as a self-managed Scrum team in two-week sprints (I facilitated Scrum). Built and deployed Cinemetrics. Tools: JavaScript, Node/Express, MongoDB, Navigo, Axios, Jira, Thunder Client, Netlify, Render.
+- **Data Science, TripleTen (June 2024):** 16 projects in EDA, statistics and machine learning.
+- **BA in Accounting, Belmont Abbey College**
+- **Anthropic Academy:** Claude Code, MCP, AI Fluency, Cowork
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=jamesmnguyen704&hide_rank=true&show_icons=true&hide_border=true" height="150"/>
